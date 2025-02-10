@@ -9,9 +9,14 @@ def main():
   #Convert that temperature to celsius, rounding to 1 decimal percision
   #Output converted temperature.
   tempF = 80
+  print("tempF", "is", tempF)
 
-  tempC = tempF / 2
+  tempC = (tempF - 32) * 5/9
+  
 
-  print(tempF, "is ", tempC, "degrees celsius.")
+  num = tempC
+  rounded_num = round(num, 2)
+  print(tempF, "is ", rounded_num, "degrees celsius.")
+  
 if __name__ == '__main__':
   main()
